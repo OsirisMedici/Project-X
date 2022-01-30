@@ -1,0 +1,80 @@
+import turtle
+
+wn = turtle.Screen()
+wn.title("Game by Rowdybeastt ")
+wn.setup(width=800,height=600)
+wn.bgcolor("white")
+wn.tracer(0)
+
+# paddle A Code 
+paddleA = turtle.Turtle()
+paddleA.speed(0)
+paddleA.color("black")
+paddleA.shape("square")
+paddleA.shapesize(stretch_wid=7, stretch_len=1)
+
+paddleA.penup()
+paddleA.goto(-350,0)
+
+# paddle B Code 
+paddleB = turtle.Turtle()
+paddleB.speed(0)
+paddleB.color("black")
+paddleB.shape("square")
+paddleB.shapesize(stretch_wid=7, stretch_len=1)
+
+paddleB.penup()
+paddleB.goto(350,0)
+
+# Ball Code 
+ball = turtle.Turtle()
+ball.speed(0)
+ball.color("black")
+ball.shape("square")
+
+ball.penup()
+ball.goto(0,0)
+ball.dx = 0.2
+ball.dy = 0.2
+
+# Let's make those sticks movable by using Functions
+
+# For Stick one paddleA we will right a function for Up and a function for Down
+def paddleAup():
+    y = paddleA.ycor()
+    y += 20
+    paddleA.sety(y)
+
+wn.listen()
+wn.onkeypress(paddleAup, "q")    
+
+def paddleAdown():
+    y = paddleA.ycor()
+    y -= 20
+    paddleA.sety(y)
+
+wn.listen()
+wn.onkeypress(paddleAdown, "z")    
+
+# PaddleB function for moving stick Up and Down
+def paddleBup():
+    y = paddleB.ycor()
+    y += 20
+    paddleB.sety(y)
+wn.listen()
+wn.onkeypress(paddleBup, "p")  
+
+def paddleBdown():
+    y = paddleB.ycor()
+    y -= 20
+    paddleB.sety(y)
+wn.listen()
+wn.onkeypress(paddleBdown, "m")
+
+
+# Main Game Loop here
+while True:
+    wn.update()
+    # Let's make the ball Move
+    ball.setx(ball.xcor() + ball.dx)
+    ball.sety(ball.ycor() + ball.dy)
