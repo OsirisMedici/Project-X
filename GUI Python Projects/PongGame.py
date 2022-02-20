@@ -129,3 +129,4 @@ while True:
         ball.setx(-340)
         ball.dx *= -1    
 
+# Use this program For the your initial start and Don't stop until you make something good good.
