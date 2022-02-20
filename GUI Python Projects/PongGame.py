@@ -1,3 +1,4 @@
+# we are Going to make a very Fun game and You will feel nostalgic after you completed this project just after You will play after making it. I almost rememberes all the memories of my childhood when I saw this game working Properly.
 import turtle
 wn = turtle.Screen()
 wn.title("Pong Game by AbhisekVrt ")
