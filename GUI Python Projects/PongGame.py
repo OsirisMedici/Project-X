@@ -1,16 +1,20 @@
 # we are Going to make a very Fun game and You will feel nostalgic after you completed this project just after You will play after making it. I almost rememberes all the memories of my childhood when I saw this game working Properly.
+
 import turtle
+# we add import on the top of head so we can use functions of turtle anytime we want in the program 
+# Now we are going to make a header for our Game 
 wn = turtle.Screen()
 wn.title("Pong Game by AbhisekVrt ")
 wn.setup(width=800,height=600)
 wn.bgcolor("red")
 wn.tracer(0)
 
-#main Game Code
+#main Game Code ---> the Score board so You can see who is winning
 # Score board
 score_a = 0
 score_b = 0
 
+# A very simple code for Moving sticks to 
 # paddle A 
 paddle_a = turtle.Turtle()
 paddle_a.speed(0)
