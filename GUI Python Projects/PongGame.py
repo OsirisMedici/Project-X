@@ -48,7 +48,7 @@ ball.goto(0, 0.0)
 ball.dx = 0.3
 ball.dy = -0.3
 
-# Let's make a pannel for the Game
+# Let's make a pannel for the Game. pan function are pretty useful once you know what word is for what use. ex--> speed, color and goto
 pan = turtle.Turtle()
 pan.speed(0)
 pan.color("white")
