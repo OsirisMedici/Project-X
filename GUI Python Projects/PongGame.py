@@ -25,7 +25,8 @@ paddle_a.shapesize(stretch_wid=7, stretch_len=1)
 paddle_a.penup()
 paddle_a.goto(-350.0, 0.0)
 
-# paddle B
+# paddle B 
+# we will go for the same for the next paddle
 paddle_b = turtle.Turtle()
 paddle_b.speed(0)
 paddle_b.color("white")
@@ -35,6 +36,7 @@ paddle_b.shapesize(stretch_wid=7, stretch_len=1)
 paddle_b.penup()
 paddle_b.goto(350.0, 0.0)
 
+# we will go for the same for the next BALL
 # ball B
 ball = turtle.Turtle()
 ball.speed(0)
