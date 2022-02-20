@@ -1,8 +1,10 @@
 # we are Going to make a very Fun game and You will feel nostalgic after you completed this project just after You will play after making it. I almost rememberes all the memories of my childhood when I saw this game working Properly.
 
 import turtle
+
 # we add import on the top of head so we can use functions of turtle anytime we want in the program 
 # Now we are going to make a header for our Game 
+
 wn = turtle.Screen()
 wn.title("Pong Game by AbhisekVrt ")
 wn.setup(width=800,height=600)
@@ -58,6 +60,7 @@ pan.goto(0 , 260)
 pan.write("Player A: 0 Player B: 0" , align ="center" , font =("courier", 26, "normal"))
 
 # stick moving code for A
+
 def paddleAup():
     y = paddle_a.ycor()
     y += 20
@@ -75,6 +78,7 @@ wn.listen()
 wn.onkeypress(paddleAdown, "z")   
 
 # stick moving code for B
+
 def paddleBup():
     y = paddle_b.ycor()
     y += 20
@@ -93,7 +97,9 @@ wn.onkeypress(paddleBdown, "m")
 
 while True:
     wn.update()
-    #move the Ball
+    
+#move the Ball
+
     ball.setx(ball.xcor() +ball.dx)
     ball.sety(ball.ycor() + ball.dy)
 
@@ -119,7 +125,8 @@ while True:
         pan.clear()
         pan.write("Player A: {} Player B: {}".format(score_a, score_b) , align ="center" , font =("courier", 26, "normal"))
 
-    # paddle and Bole moving Combination 
+# paddle and Bole moving Combination 
+    
     if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < paddle_b.ycor()+70 and ball.ycor() > paddle_b
     .ycor() -70):
         ball.setx(340)
