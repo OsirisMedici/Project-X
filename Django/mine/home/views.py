@@ -1,7 +1,7 @@
 from django.shortcuts import render, HttpResponse
 
 def home (request):
-    return HttpResponse("This is the Home page")
+    return render(request, 'index.html')
 
 def about (request):
     return HttpResponse("This is the about page")
@@ -9,7 +9,7 @@ def about (request):
 def contact (request):
     return HttpResponse("This is the contact page")
 
-def help (request):
+def product (request):
     return HttpResponse("This is the help page")
 
 # Create your views here.
