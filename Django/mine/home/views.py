@@ -1,6 +1,6 @@
 from django.shortcuts import render, HttpResponse
 
-def index (request):
+def home (request):
     return HttpResponse("This is the Home page")
 
 def about (request):
