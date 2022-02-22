@@ -22,6 +22,8 @@ admin.site.site_header = "Abhishekvrt Admin"
 admin.site.site_title = "Abhishek Admin Portal"
 admin.site.index_title = "Welcome to App Portal"
 
+admin.site.site_header = 'My Site <img src="&#xF6E2" alt="gpu-card.svg" style="width:10%">'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path ('', include('home.urls'), name=home)
