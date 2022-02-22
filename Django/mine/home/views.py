@@ -6,10 +6,16 @@ def home (request):
 def about (request):
     return HttpResponse("This is the about page")
 
-def contact (request):
-    return HttpResponse("This is the contact page")
+def books (request):
+    return render(request, 'books.html')
 
-def product (request):
-    return HttpResponse("This is the help page")
+def documentation (request):
+    return render(request, 'documentation.html')
+    
+    # return HttpResponse("This is the contact page")
+
+def community (request):
+    return render(request, 'community.html')
+    
 
 # Create your views here.
