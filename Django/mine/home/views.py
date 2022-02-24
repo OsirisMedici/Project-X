@@ -11,6 +11,9 @@ def books (request):
 
 def documentation (request):
     return render(request, 'documentation.html')
+
+def course (request):
+    return render(request, 'course.html')
     
     # return HttpResponse("This is the contact page")
 
