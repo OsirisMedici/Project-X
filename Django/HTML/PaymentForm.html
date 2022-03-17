@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+<h1>Payment Form</h1>
+<h2>Contact Information</h2>
+<p>Name *<input type="text" placeholder="Abhishek singh" name="name" id="name" required></p>
+<fieldset>
+    <legend>Gender</legend>
+<p>
+    male *<input type="radio" name="gender" id="male"> Female *<input type="radio" name="gender" id="female" required>
+</p>
+</fieldset>
+<p>Address <textarea name="address" id="address" cols="100" rows="10"></textarea></p>
+<p>Email *<input type="email" placeholder="abhishek249@gmail.com" name="email" id="email" required></p>
+<p>Pincode *<input type="number" placeholder="123456" name="pincode" id="pincode" required></p>
+
+<h2>Payment Information</h2>
+<p>Card Type 
+    *<select name="cardtype" id="cardtype">
+    <option value=""><--select a card type</option>
+    <option value="Rupay">Rupay</option>
+    <option value="Visa">Visa</option>
+    <option value="Mastercard">Mastercard</option>
+    </select>
+</p>
+<p>Card Number: *<input type="number" placeholder="45****" name="cardnum" id="cardnum" required></p>
+<p>
+    Expiry Date: *<input type="date" name="Expiry" id="Expiry" required>
+</p>
+<p>
+    CVV *<input type="password" placeholder="000" name="cvv" id="cvv" required>
+</p>
+<input type="submit" value="Pay Now">
+</body>
+</html>
