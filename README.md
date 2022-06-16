@@ -1,5 +1,5 @@
 
-# PROJECT-X Universal  
+## Rookie Projects
 
 ## My Highest and well conceptual Projects Linked below ----->
 ### [1. Jordan Chatbot ( using Kivy and KivyMD framework )](https://github.com/Abhishekvrt/JordanChatBot) 
